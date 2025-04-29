@@ -138,7 +138,6 @@ body {
 .about-games__games-biger {
   height: 551px;
   margin-top: -39px;
-  position: relative;
 }
 .about-games__games:hover {
   transform: scale(1.1);
@@ -171,6 +170,9 @@ body {
   font-size: 32px;
   font-weight: 700;
   line-height: 39px;
+}
+.about-games__position {
+  position: relative;
 }
 .about-games__img {
   position: absolute;
