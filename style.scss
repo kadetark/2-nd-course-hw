@@ -26,6 +26,7 @@ body {
     justify-content: space-between;
     height: 800px;
     background-image: url(img/header.svg);
+    background-color: #E1FF8F;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -110,6 +111,13 @@ body {
         padding-top: 94px;
         color: rgb(255, 255, 255);
     }
+
+    &-games {
+        @extend .title;
+        @extend .title-white;
+        padding-top: 46px;
+        margin-bottom: 72px;
+    }
 }
 
 .about-games {
@@ -117,7 +125,7 @@ body {
     background-color: #202027;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: auto;
     height: 1470px;
 
     &__text {
@@ -189,6 +197,81 @@ body {
         position: absolute;
         left: 37%;
         bottom: 63%;
+    }
+}
+
+.mini-games {
+    background-image: url(img/bgr_games.svg);
+    background-color: #202027;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    height: 3500px;
+
+    &__games-box {
+        display: flex;
+        gap: 32px;
+        flex-wrap: wrap;
+    }
+
+    &__games {
+        height: 500px;
+        width: 1200px;
+        display: flex;
+        justify-content: space-between;
+        background-color: #fff;
+        border-radius: 47px;
+    }
+
+    &__text-box {
+        margin: 48px;
+    }
+
+    &__name {
+        color: rgb(32, 32, 39);
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 59px;
+        margin-bottom: 24px;
+    }
+
+    &__desk {
+        width: 440px;
+        color: rgb(32, 32, 39);
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32px;
+        margin-bottom: 36px;
+    }
+
+    &__button {
+        width: 247px;
+        height: 66px;
+        font: inherit;
+        color: rgb(255, 255, 255);
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 141.69%;
+        border-radius: 60px;
+        background: rgb(32, 32, 39);
+        cursor: pointer;
+
+        &:hover {
+            color: #000;
+            background: #fff;
+            transition: ease 0.4s;
+        }
+    }
+
+    &__position{
+        position: relative;
+    }
+
+    &__img {
+        position: absolute;
+        left: 21%;
+        bottom: 39%;
+        transform: scale(1.5);
     }
 }
 
