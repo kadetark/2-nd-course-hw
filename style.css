@@ -85,6 +85,10 @@ body {
 .top__games-star {
   height: 36px;
 }
+.top-bottom {
+  flex-shrink: 0;
+  overflow: hidden;
+}
 
 .title {
   padding-top: 196px;
