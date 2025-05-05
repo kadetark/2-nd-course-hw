@@ -1,0 +1,132 @@
+@media (max-width: 767px) {
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .title {
+        padding-top: 147px;
+        font-size: 40px;
+        line-height: 49px;
+        text-align: center;
+
+        &-games {            
+            padding-top: 48px;
+            margin-bottom: 48px;
+            text-align: left;
+        }
+    }
+
+    .top {
+        background-image: url(img/header_mob.svg);
+        height: 700px;
+
+        &__content{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__text {
+            width: 296px;
+            font-size: 16px;
+            line-height: 20px;
+            text-align: center;            
+        }
+
+        &__button{
+            display: none;
+        }
+
+        &__button-mob {
+            display: flex;
+            margin-top: 36px;            
+            font-size: 16px;
+            width: 285px;
+            height: 55px;
+        }        
+
+        &__games {
+            height: 50px;
+            padding-left: 24px;
+            padding-right: 24px;
+            gap: 27.4px;
+
+            &-text {
+                height: 18px;
+                color: rgb(32, 32, 39);
+                font-size: 16px;
+            }
+
+            &-star {
+                height: 19px;
+            }
+        }
+    }
+
+    .about-games {
+        display: none;
+    }
+
+    .mini-games {
+        height: auto;
+        
+        &__games-box{
+            gap: 24px;
+            padding-bottom: 10px;
+        }    
+
+        &__games {            
+            width: 343px;
+            height: auto; 
+            flex-direction: column;
+            border-radius: 30px;
+
+            &_reverse {
+                flex-direction: column-reverse;
+            }
+        }
+
+        &__name{
+            width: 285px;
+            font-size: 32px;
+            line-height: 39px;
+            margin-bottom: 16px;
+        }
+
+        &__desk{
+            font-size: 16px;
+            line-height: 20px;
+            margin-bottom: 32px;
+
+            &_g6{
+                width: 245px;
+            }
+        }
+
+        &__button{
+            font-size: 16px;
+            line-height: 141.69%;
+            width: 285px;
+            height: 55px;
+        }
+
+        &__text-box {
+            margin: 29px;
+            margin-bottom: 32.67px;
+            width: auto;        
+        }
+
+        &__img{
+            left: 36%;
+            bottom: 68%;
+            transform: none;
+        }
+    }
+
+    .footer{
+        height: 100px;
+        font-size: 16px;
+        line-height: 20px;
+    }
+}

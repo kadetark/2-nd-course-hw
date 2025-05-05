@@ -62,7 +62,12 @@ body {
             color: #000;
             background: #fff;
             transition: ease 0.4s;
-        }
+        }       
+    }
+
+    &__button-mob {
+        @extend .top__button;
+        display: none;
     }
 
     &__games {
@@ -192,7 +197,7 @@ body {
         line-height: 39px;
     }
 
-    &__position{
+    &__position {
         position: relative;
     }
 
@@ -228,6 +233,7 @@ body {
 
     &__text-box {
         margin: 48px;
+        width: 600px;
     }
 
     &__name {
@@ -239,7 +245,6 @@ body {
     }
 
     &__desk {
-        width: 440px;
         color: rgb(32, 32, 39);
         font-size: 24px;
         font-weight: 400;
@@ -289,3 +294,5 @@ body {
     font-weight: 600;
     line-height: 29px;
 }
+
+@import 'mobil';
