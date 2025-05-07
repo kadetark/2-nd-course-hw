@@ -40,10 +40,21 @@ num += 5;
 num -= 3;
 num *= 7;
 num /= 3;
-num += 1;
-num -= 1;
+num++;
+num--;
 alert(num);
 
 //Задание 8
 let age = prompt('Сколько вам лет?');
 alert (`Вам ${age}`);
+
+//Задание 9
+let user = {
+    name: 'Иван',
+    age: 30,
+    isAdmin: true
+}
+
+//Задание 10
+let nameUser = prompt('Как вас зовут?');
+alert (`Привет, ${nameUser}!`);
