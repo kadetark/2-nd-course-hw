@@ -61,6 +61,7 @@
 // alert (`Привет, ${nameUser}!`);
 
 //HW3
+
 //Задание 1
 let password = 'пароль';
 let passwordUser = prompt('Введите пароль');
