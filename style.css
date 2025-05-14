@@ -304,17 +304,18 @@ body {
   }
   .top__games {
     height: 50px;
-    padding-left: 24px;
-    padding-right: 24px;
     gap: 27.4px;
   }
   .top__games-text {
     height: 18px;
-    color: rgb(32, 32, 39);
     font-size: 16px;
   }
   .top__games-star {
     height: 19px;
+  }
+  .top-bottom {
+    padding-left: 24px;
+    padding-right: 24px;
   }
   .about-games {
     display: none;
