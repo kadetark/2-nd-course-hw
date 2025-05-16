@@ -47,20 +47,22 @@
         }        
 
         &__games {
-            height: 50px;
-            padding-left: 24px;
-            padding-right: 24px;
+            height: 50px;            
             gap: 27.4px;
 
             &-text {
-                height: 18px;
-                color: rgb(32, 32, 39);
+                height: 18px;                
                 font-size: 16px;
             }
 
             &-star {
                 height: 19px;
             }
+        } 
+        
+        &-bottom {        
+        padding-left: 24px;
+        padding-right: 24px;         
         }
     }
 
