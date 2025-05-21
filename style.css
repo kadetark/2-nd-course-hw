@@ -20,6 +20,14 @@ body {
   padding-right: calc(50% - 600px);
 }
 
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-55.5%);
+  }
+}
 .top {
   display: flex;
   flex-direction: column;
@@ -69,7 +77,8 @@ body {
   gap: 51px;
   align-items: center;
   height: 90px;
-  width: 3122px;
+  width: 5722px;
+  animation: scroll 17s linear infinite;
 }
 .top__games-text {
   height: 33px;
