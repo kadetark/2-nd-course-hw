@@ -78,7 +78,7 @@ body {
   align-items: center;
   height: 90px;
   width: 5722px;
-  animation: scroll 17s linear infinite;
+  animation: scroll 12s linear infinite;
 }
 .top__games-text {
   height: 33px;
@@ -286,6 +286,14 @@ body {
     margin-bottom: 48px;
     text-align: left;
   }
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-29.6%);
+    }
+  }
   .top {
     background-image: url(img/header_mob.svg);
     height: 700px;
@@ -314,6 +322,7 @@ body {
   .top__games {
     height: 50px;
     gap: 27.4px;
+    animation: scroll 10s linear infinite;
   }
   .top__games-text {
     height: 18px;

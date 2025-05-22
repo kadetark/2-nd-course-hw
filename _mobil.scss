@@ -17,6 +17,11 @@
         }
     }
 
+    @keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-29.6%); }
+}
+
     .top {
         background-image: url(img/header_mob.svg);
         height: 700px;
@@ -49,6 +54,7 @@
         &__games {
             height: 50px;            
             gap: 27.4px;
+            animation: scroll 10s linear infinite;  
 
             &-text {
                 height: 18px;                

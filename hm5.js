@@ -11,8 +11,7 @@ function max(a, b) {
 // Задание 2
 
 function even(n) {
-    n = n % 2;
-    if (n === 0) {
+    if (n % 2 === 0) {
         return 'Число четное';
     } else {
         return 'Число нечетное';
@@ -21,9 +20,8 @@ function even(n) {
 
 // Задание 3
 
-function square(x) {
-    x = x * x;
-    console.log(x);   
+function square(x) {    
+    console.log(x * x);   
 }
 
 function square2(y){
@@ -47,7 +45,7 @@ function howOld() {
 // Задание 5
 
 function myNan(a, b) {
-   if (isNaN(a) === true || isNaN(b) === true) {
+   if (isNaN(a) || isNaN(b)) {
     return 'Одно или оба значения не являются числом';
    } else { 
     return a * b;
@@ -56,12 +54,12 @@ function myNan(a, b) {
 
 // Задание 6
 
-function cube(n) {
+function cube() {
     n = Number(prompt('Введите число'));
-    if (isNaN(n) === true) {
+    if (isNaN(n)) {
         return 'Переданный параметр не является числом';
     } else {
-        return `${n} в кубе равняется ${n*n*n}`;
+        return `${n} в кубе равняется ${n ** 3}`;
     }
 }
 
