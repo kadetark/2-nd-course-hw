@@ -24,31 +24,31 @@ function game2() {
     let a = Math.floor(Math.random() * 10) + 1;
     let b = Math.floor(Math.random() * 10) + 1;
     const operations = ['+', '-', '*', '/'];
-    const operation = Math.floor(Math.random() * operations.length) + 1;
+    const operation = Math.floor(Math.random() * operations.length);
     
     let c = '';
     let result = '';
 
     switch (operation) {
-        case 1:
-            c = '+';
+        case 0:
+            c = operations[0];
             result = a + b;
             break;
-        case 2:
-            c = '-';               
+        case 1:
+            c = operations[1];              
             if (a < b) {
                [a, b] = [b, a];
             }
             result = a - b;
             break;
-        case 3:
-            c = '*';
+        case 2:
+            c = operations[2];
             result = a * b;
             break;
-        case 4:
-            c = '/';  
+        case 3:
+            c = operations[3];  
             result = a;
-            a = a * b;
+            a *= b;
             break;                    
     }
 
