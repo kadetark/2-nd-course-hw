@@ -32,7 +32,7 @@ let arr = [];
 for (let i = 0; i < 3; i++) {
   arr[i] = [];
   for (let j = 0; j < 3; j++) {
-    arr[i][j] = i * 3 + j + 1;
+    arr[i][j] = 1;
   }
 }
 console.log(arr);
@@ -48,7 +48,8 @@ console.log(nums5);
 
 const nums6 = [9, 8, 7, 'a', 6, 5];
 
-nums6.sort();
+nums6.sort((a, b) => a - b);
+console.log(nums6);
 let var1 = nums6;
 let var2 = nums6;
 
@@ -102,24 +103,21 @@ for (let i = 0; i < total.length; i++) {
 
 // Задание 11
 
-function arrSq() {
-    const arrBefore = [2, 3, 4];
+function arrSq(arrBefore) {        
     const arrAfter = arrBefore.map(arr => arr ** 2);
     console.log(arrAfter);
 }
 
 // Задание 12
 
-function strArr() {
-    const strBefore = ["дуб", "мука", "маска", "компот"];
+function strArr(strBefore) {    
     const strAfter = strBefore.map(str => str.length);
     console.log(strAfter);
 }
 
 //Задание 13
 
-function negative() {
-    const array = [-5, -4, -3, 1, 2, 6];
+function negative(array) {    
     const arrayNew = array.filter(arr => arr < 0);
     console.log(arrayNew);
 }
