@@ -142,3 +142,5 @@ for (let i = 0; i < 6; i++) {
 
 const midRes = midRan.reduce((a, b) => a + b) / 6;
 console.log(midRes);
+
+

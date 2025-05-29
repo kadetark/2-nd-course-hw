@@ -60,3 +60,45 @@ function game2() {
                 alert('Не верно');
             }
 }   
+
+function game3() {
+    let userText = prompt('Введите тест');
+    let newText = userText.split("").reverse().join("");
+    alert(newText);
+}
+
+function game5() {
+    const quiz = [
+           {
+               question: "Какой цвет у неба?",
+               options: ["1. Красный", "2. Синий", "3. Зеленый"],
+               correctAnswer: 2 // номер правильного ответа
+           },
+           {
+               question: "Сколько дней в неделе?",
+               options: ["1. Шесть", "2. Семь", "3. Восемь"],
+               correctAnswer: 2
+           },
+           {
+               question: "Сколько у человека пальцев на одной руке?",
+               options: ["1. Четыре", "2. Пять", "3. Шесть"],
+               correctAnswer: 2
+           }
+       ];
+
+let correctAnswers = 0;
+
+for (let i = 0; i < quiz.length; i++) {      
+   let userAnswer = prompt(`Выберите правильный ответ на вопрос: \n${quiz[i].question} \n${quiz[i].options.join(" ")}`);
+   if (userAnswer === null) break;
+
+   if (Number(userAnswer)=== quiz[i].correctAnswer) {
+    correctAnswers++;
+    alert('Верно');    
+    } else {
+    alert('Не верно');    
+   }
+} 
+       
+alert(`Правильных ответов ${correctAnswers} из ${quiz.length}`);
+}
