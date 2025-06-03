@@ -39,20 +39,21 @@ function randomNum() {
 
 // Задание 6
 
-function randomArray(Number) {
-    const arr = [];
-    let zeros = 10 ** (String(Number).split('').length);    
+function randomArray(number) {
+    const arr = [];       
 
-    for (let i = 0; i <= (Number/2 - 1);) {
-        arrNum = Math.floor(Math.random() * zeros);
-        if (arrNum <= Number) {
+    for (let i = 0; i < Math.floor(number / 2);) {
+        let arrNum = Math.floor(Math.random() * (number + 1));        
+        if (arrNum <= number) {
             arr[i] = arrNum;
             i++;     
         } else {
             continue;
         }    
+        
     }
-    console.log(arr);    
+    
+    return arr;    
 }
 
 // Задание 7
