@@ -40,8 +40,7 @@ function randomNum() {
 // Задание 6
 
 function randomArray(number) {
-    const arr = [];       
-
+    const arr = [];    
     for (let i = 0; i < Math.floor(number / 2);) {
         let arrNum = Math.floor(Math.random() * (number + 1));        
         if (arrNum <= number) {
@@ -49,10 +48,8 @@ function randomArray(number) {
             i++;     
         } else {
             continue;
-        }    
-        
-    }
-    
+        }            
+    }    
     return arr;    
 }
 
