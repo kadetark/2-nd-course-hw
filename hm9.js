@@ -61,5 +61,7 @@ const btnRemove = document.querySelector('.btn-remove');
 const description3 = document.querySelector('.description3');
 
 btnRemove.addEventListener('click', function() {
-    description3.remove();
+    if (description3) {
+        description3.remove();
+    }
 });
