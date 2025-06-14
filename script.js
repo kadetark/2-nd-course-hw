@@ -131,3 +131,20 @@ function game5() {
 
     alert(`Правильных ответов ${correctAnswers} из ${quiz.length}`);
 }
+
+function game6() {
+    const randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
+
+    const elementsToChange = [
+    '.mini-games',
+    '.footer',
+    '.about-games',
+    '.top',
+    '.top-bottom'
+].map(selector => document.querySelector(selector));
+
+    elementsToChange.forEach(element => {
+    element.style.backgroundImage = 'none';
+    element.style.backgroundColor = randomColor;
+    });
+}
